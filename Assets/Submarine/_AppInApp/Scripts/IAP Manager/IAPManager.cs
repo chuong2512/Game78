@@ -73,6 +73,12 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
         builder.AddProduct(IAPKey.PACK2, ProductType.Consumable);
         builder.AddProduct(IAPKey.PACK3, ProductType.Consumable);
         builder.AddProduct(IAPKey.PACK4, ProductType.Consumable);
+        
+        builder.AddProduct(IAPKey.PACK1_REGISTER, ProductType.Subscription);
+        builder.AddProduct(IAPKey.PACK2_REGISTER, ProductType.Subscription);
+        builder.AddProduct(IAPKey.PACK3_REGISTER, ProductType.Subscription);
+        builder.AddProduct(IAPKey.PACK4_REGISTER, ProductType.Subscription);
+        builder.AddProduct(IAPKey.PACK5_REGISTER, ProductType.Subscription);
         UnityPurchasing.Initialize(this, builder);
     }
 

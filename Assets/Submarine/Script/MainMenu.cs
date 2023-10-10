@@ -52,11 +52,11 @@ public class MainMenu : MonoBehaviour {
 
 	public void Play(){
 		
-		/*if (GameDataManager.Instance.playerData.time <= 0)
+		if (GameDataManager.Instance.playerData.time <= 0)
 		{
 			Sub.SetActive(true);
 			return;
-		}*/
+		}
 
 		GameManager.Instance.Play ();
 		UI.SetActive (true);

@@ -1,8 +1,9 @@
-
+using UnityEngine.Purchasing.Security;
 using System;
 using System.Collections;
 using Jackal;
 using UnityEngine;
+using UnityEngine.Purchasing;
 
 public class IAPKey
 {
@@ -18,16 +19,14 @@ public class IAPKey
     public const string PACK5_REGISTER = "game78_register_4_submarine";
 }
 
-public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
+public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
 {
     private bool IsInitialized()
     {
         // Only say we are initialized if both the Purchasing references are set.
-        /*return storeController != null && extensionProvider != null;*/
-        return true;
+        return storeController != null && extensionProvider != null;
     }
 
-    /*
     public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
     {
         // Purchasing has succeeded initializing. Collect our Purchasing references.
@@ -38,10 +37,9 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
         // Store specific subsystem, for accessing device-specific store features.
         extensionProvider = extensions;
     }
-    */
 
     
-    /*private static IStoreController storeController;*/
+    private static IStoreController storeController;
  
 
     private bool _isBuyFromShop;
@@ -53,13 +51,13 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
 
     private void InitIAP()
     {
-        /*if (storeController == null)
+        if (storeController == null)
         {
             InitProduct();
-        }*/
+        }
     }
 
-    /*private static IExtensionProvider extensionProvider;*/
+    private static IExtensionProvider extensionProvider;
     public static Action OnPurchaseSuccess;
     
     private void InitProduct()
@@ -69,7 +67,7 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
             return;
         }
 
-        /*var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
+        var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
 
         builder.AddProduct(IAPKey.PACK1, ProductType.Consumable);
         builder.AddProduct(IAPKey.PACK2, ProductType.Consumable);
@@ -81,7 +79,7 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
         builder.AddProduct(IAPKey.PACK3_REGISTER, ProductType.Subscription);
         builder.AddProduct(IAPKey.PACK4_REGISTER, ProductType.Subscription);
         builder.AddProduct(IAPKey.PACK5_REGISTER, ProductType.Subscription);
-        UnityPurchasing.Initialize(this, builder);*/
+        UnityPurchasing.Initialize(this, builder);
     }
 
     public void BuyProductID(string productId)
@@ -134,12 +132,12 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
         {
             Debug.Log("RestorePurchases started ...");
 
-            /*var apple = extensionProvider.GetExtension<IAppleExtensions>();
+            var apple = extensionProvider.GetExtension<IAppleExtensions>();
             apple.RestoreTransactions((result) =>
             {
                 Debug.Log("Transactions restored: " + (result ? "Succeed" : "Failed"));
                 OnRestored?.Invoke(result);
-            });*/
+            });
         }
         else
         {
@@ -149,12 +147,12 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
     }
     public static string GetLocalizePrice(string key, string defaultPriceText)
     {
-        /*if (storeController != null)
-            return storeController.products.WithID(key).metadata.localizedPriceString;*/
+        if (storeController != null)
+            return storeController.products.WithID(key).metadata.localizedPriceString;
         return defaultPriceText;
     }
 
-    /*public void OnPurchaseFailed(Product product, PurchaseFailureReason failureReason)
+    public void OnPurchaseFailed(Product product, PurchaseFailureReason failureReason)
     {
         Debug.Log(string.Format("OnPurchaseFailed: FAIL. Product: '{0}', PurchaseFailureReason: {1}",
             product.definition.storeSpecificId, failureReason));
@@ -163,7 +161,7 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
     public void OnInitializeFailed(InitializationFailureReason error)
     {
         Debug.Log("OnInitializeFailed InitializationFailureReason:" + error);
-    }*/
+    }
     private void HandleRestorePurchase(string productId)
     {
         StartCoroutine(CoHandleRestore(productId));
@@ -178,7 +176,7 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
     {
         //todo: buy pack
     }
-    /*public void OnInitializeFailed(InitializationFailureReason error, string message)
+    public void OnInitializeFailed(InitializationFailureReason error, string message)
     {
         
     }
@@ -247,7 +245,6 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
         // saving purchased products to the cloud, and when that save is delayed. 
         return PurchaseProcessingResult.Complete;
     }
-    */
 
 
 

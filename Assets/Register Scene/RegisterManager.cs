@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class RegisterManager : MonoBehaviour
 {
     public Button buttonContinue;
+    public GameObject sub;
 
     public TextMeshProUGUI textRemain;
 
@@ -43,7 +44,7 @@ public class RegisterManager : MonoBehaviour
 
     private void OnClickButton()
     {
-        gameObject.SetActive(false);
+        sub.SetActive(false);
     }
 
     public void OnPressDown(int i)

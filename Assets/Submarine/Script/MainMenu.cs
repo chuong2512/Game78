@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour {
 	public GameObject Loading;
 	public GameObject Coin;
 	public GameObject Sub;
+	public GameObject SubBtn;
 	public GameObject PlayBtn;
 
 	[Header("Settings")]
@@ -42,6 +43,7 @@ public class MainMenu : MonoBehaviour {
 		Mission.SetActive (false);
 		Loading.SetActive (false);
 		Coin.SetActive (false);
+		SubBtn.SetActive (false);
 
 		sound.sprite = GlobalValue.isSound ? soundOn : soundOff;
 		music.sprite = GlobalValue.isMusic ? musicOn : musicOff;
@@ -63,6 +65,7 @@ public class MainMenu : MonoBehaviour {
 		PlayBtn.SetActive (false);
 		Controller.SetActive (true);
 		Coin.SetActive (true);
+		SubBtn.SetActive (true);
 	}
 
 	//called by GameManager

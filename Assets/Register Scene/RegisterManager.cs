@@ -10,6 +10,7 @@ public class RegisterManager : MonoBehaviour
     public GameObject sub;
 
     public TextMeshProUGUI textRemain;
+    public TextMeshProUGUI textRemain1;
 
     private TimeSpan checkTime;
 
@@ -138,6 +139,7 @@ public class RegisterManager : MonoBehaviour
         if (checkTime.TotalSeconds < 1)
         {
             textRemain.text = "You need to pay to continue";
+            textRemain1.text = "You have used up all your playing time";
           GameDataManager.Instance.playerData.ResetTime();
         }
         else
@@ -149,6 +151,8 @@ public class RegisterManager : MonoBehaviour
                 checkTime.Seconds);
 
             textRemain.text = $"Time remaining : " +
+                              $"{answer}";
+            textRemain1.text = $"Time remaining : " +
                               $"{answer}";
         }
     }

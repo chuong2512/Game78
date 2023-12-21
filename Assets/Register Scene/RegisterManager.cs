@@ -54,27 +54,27 @@ public class RegisterManager : MonoBehaviour
         {
             case 1:
                 IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(1);
+                    AddTime(30);
                 IAPManager.Instance.BuyProductID(IAPKey.PACK1_REGISTER);
                 break;
             case 2:
                 IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(7);
+                    AddTime(60);
                 IAPManager.Instance.BuyProductID(IAPKey.PACK2_REGISTER);
                 break;
             case 3:
                 IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(30);
+                    AddTime(90);
                 IAPManager.Instance.BuyProductID(IAPKey.PACK3_REGISTER);
                 break;
             case 4:
                 IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(90);
+                    AddTime(180);
                 IAPManager.Instance.BuyProductID(IAPKey.PACK4_REGISTER);
                 break;
             case 5:
                 IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(180);
+                    AddTime(360);
                 IAPManager.Instance.BuyProductID(IAPKey.PACK5_REGISTER);
                 break;
         }

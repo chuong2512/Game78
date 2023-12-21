@@ -21251,10 +21251,12 @@ struct RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08  : public MonoB
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___sub_5;
 	// TMPro.TextMeshProUGUI RegisterManager::textRemain
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___textRemain_6;
+	// TMPro.TextMeshProUGUI RegisterManager::textRemain1
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___textRemain1_7;
 	// System.TimeSpan RegisterManager::checkTime
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___checkTime_7;
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___checkTime_8;
 	// System.Single RegisterManager::time
-	float ___time_8;
+	float ___time_9;
 };
 
 // Reset

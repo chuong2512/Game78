@@ -14587,10 +14587,12 @@ struct RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08  : public MonoB
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___sub_5;
 	// TMPro.TextMeshProUGUI RegisterManager::textRemain
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___textRemain_6;
+	// TMPro.TextMeshProUGUI RegisterManager::textRemain1
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___textRemain1_7;
 	// System.TimeSpan RegisterManager::checkTime
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___checkTime_7;
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___checkTime_8;
 	// System.Single RegisterManager::time
-	float ___time_8;
+	float ___time_9;
 };
 
 // Rocket
@@ -16734,9 +16736,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6612[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6613[10] = 
 {
 	static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___intDiamond_5)),static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___highPoint_6)),static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___point_7)),static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___level_8)),static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___currentSkin_9)),static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___listSkins_10)),static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___time_11)),static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___timeRegister_12)),static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___onChangeDiamond_13)),static_cast<int32_t>(offsetof(PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A, ___onChangePoint_14)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6614[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6614[6] = 
 {
-	static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___buttonContinue_4)),static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___sub_5)),static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___textRemain_6)),static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___checkTime_7)),static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___time_8)),};
+	static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___buttonContinue_4)),static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___sub_5)),static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___textRemain_6)),static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___textRemain1_7)),static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___checkTime_8)),static_cast<int32_t>(offsetof(RegisterManager_tD7811E6E1B77C55942EFE3C8AF3A021BBA733F08, ___time_9)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6615[1] = 
 {
 	static_cast<int32_t>(offsetof(AutoDestroy_t8A76D160F1165BEEC215A35F09FFE46E5A810A98, ___destroyAfterTime_4)),};

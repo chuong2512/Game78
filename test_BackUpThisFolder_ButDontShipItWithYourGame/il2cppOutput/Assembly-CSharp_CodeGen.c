@@ -82,16 +82,16 @@ extern void RegisterManager_TestLogTime_m738FA629E559826C077A031B00A68A9D6609E04
 extern void RegisterManager_UpdateTimeRemain_m84E0C4CF514914ACA548A8ADFE30EED6BCC8698D (void);
 // 0x00000023 System.Void RegisterManager::.ctor()
 extern void RegisterManager__ctor_mAC864FBB55B2D299A3A9476A881116F98A5B7496 (void);
-// 0x00000024 System.Void RegisterManager::<OnPressDown>b__6_0()
-extern void RegisterManager_U3COnPressDownU3Eb__6_0_mFFA0C601C9D1CE7CC5B985E102A4E6AD3C6D6779 (void);
-// 0x00000025 System.Void RegisterManager::<OnPressDown>b__6_1()
-extern void RegisterManager_U3COnPressDownU3Eb__6_1_m830E8A94E780BFC41091C83686FDA2D9CA520B31 (void);
-// 0x00000026 System.Void RegisterManager::<OnPressDown>b__6_2()
-extern void RegisterManager_U3COnPressDownU3Eb__6_2_m13BCFC888596C597844ABFA5FF613ED4DC3BAB3D (void);
-// 0x00000027 System.Void RegisterManager::<OnPressDown>b__6_3()
-extern void RegisterManager_U3COnPressDownU3Eb__6_3_m44659DAECB00E9C630BF428B69FA08055FECC1A8 (void);
-// 0x00000028 System.Void RegisterManager::<OnPressDown>b__6_4()
-extern void RegisterManager_U3COnPressDownU3Eb__6_4_m4A8C4FE878131E15A80B965A91EBA756407D0E81 (void);
+// 0x00000024 System.Void RegisterManager::<OnPressDown>b__7_0()
+extern void RegisterManager_U3COnPressDownU3Eb__7_0_mA7399B08271C7D37E06EBB35C26A70EAB48E2528 (void);
+// 0x00000025 System.Void RegisterManager::<OnPressDown>b__7_1()
+extern void RegisterManager_U3COnPressDownU3Eb__7_1_m2D9D552FF02485674470DF6B111D45F5C6A4B4B6 (void);
+// 0x00000026 System.Void RegisterManager::<OnPressDown>b__7_2()
+extern void RegisterManager_U3COnPressDownU3Eb__7_2_m59FE1BF411644828C3799DD578A90548158E0270 (void);
+// 0x00000027 System.Void RegisterManager::<OnPressDown>b__7_3()
+extern void RegisterManager_U3COnPressDownU3Eb__7_3_m544506DDD4C7AAAFBB6CEE5F01332B869074CA9A (void);
+// 0x00000028 System.Void RegisterManager::<OnPressDown>b__7_4()
+extern void RegisterManager_U3COnPressDownU3Eb__7_4_m7B149F298C1185948547713BCA94E3B20B23680D (void);
 // 0x00000029 System.Void AutoDestroy::Awake()
 extern void AutoDestroy_Awake_m283F27E8DC7EDA688A07087CF5317B6A044433F9 (void);
 // 0x0000002A System.Void AutoDestroy::.ctor()
@@ -808,11 +808,11 @@ static Il2CppMethodPointer s_methodPointers[384] =
 	RegisterManager_TestLogTime_m738FA629E559826C077A031B00A68A9D6609E048,
 	RegisterManager_UpdateTimeRemain_m84E0C4CF514914ACA548A8ADFE30EED6BCC8698D,
 	RegisterManager__ctor_mAC864FBB55B2D299A3A9476A881116F98A5B7496,
-	RegisterManager_U3COnPressDownU3Eb__6_0_mFFA0C601C9D1CE7CC5B985E102A4E6AD3C6D6779,
-	RegisterManager_U3COnPressDownU3Eb__6_1_m830E8A94E780BFC41091C83686FDA2D9CA520B31,
-	RegisterManager_U3COnPressDownU3Eb__6_2_m13BCFC888596C597844ABFA5FF613ED4DC3BAB3D,
-	RegisterManager_U3COnPressDownU3Eb__6_3_m44659DAECB00E9C630BF428B69FA08055FECC1A8,
-	RegisterManager_U3COnPressDownU3Eb__6_4_m4A8C4FE878131E15A80B965A91EBA756407D0E81,
+	RegisterManager_U3COnPressDownU3Eb__7_0_mA7399B08271C7D37E06EBB35C26A70EAB48E2528,
+	RegisterManager_U3COnPressDownU3Eb__7_1_m2D9D552FF02485674470DF6B111D45F5C6A4B4B6,
+	RegisterManager_U3COnPressDownU3Eb__7_2_m59FE1BF411644828C3799DD578A90548158E0270,
+	RegisterManager_U3COnPressDownU3Eb__7_3_m544506DDD4C7AAAFBB6CEE5F01332B869074CA9A,
+	RegisterManager_U3COnPressDownU3Eb__7_4_m7B149F298C1185948547713BCA94E3B20B23680D,
 	AutoDestroy_Awake_m283F27E8DC7EDA688A07087CF5317B6A044433F9,
 	AutoDestroy__ctor_m861058CD9FE382B142E517F0148176BB0FD1D886,
 	AutoRotate_Start_m054B912D7EE887A16B50CA90C3DB43F475F4AD40,
